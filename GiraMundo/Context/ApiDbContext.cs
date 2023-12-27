@@ -12,18 +12,5 @@ namespace GiraMundo.Context
         public DbSet<Pacote> Pacotes { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Pedido>()
-                .HasOne(p => p.Usuario)
-                .WithMany(u => u.Pedidos);
-
-            modelBuilder.Entity<Pedido>()
-                .HasOne(p => p.Pacote)
-                .WithMany(pa => pa.Pedidos);
-
-            base.OnModelCreating(modelBuilder);
-        }
     }
 }
