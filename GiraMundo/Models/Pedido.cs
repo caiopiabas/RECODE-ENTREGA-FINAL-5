@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
@@ -12,6 +11,7 @@ namespace GiraMundo.Models
         public int PedidoId { get; set; }
 
         [Required(ErrorMessage = "A Data do Pedido é obrigatória")]
+        [DataType(DataType.Date)]
         public DateTime DataPedido { get; set; }
 
         // Chave estrangeira para Usuario

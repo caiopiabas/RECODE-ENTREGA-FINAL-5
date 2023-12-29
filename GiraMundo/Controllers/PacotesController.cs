@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using GiraMundo.Context;
+using GiraMundo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using GiraMundo.Context;
-using GiraMundo.Models;
 
 namespace GiraMundo.Controllers
 {
