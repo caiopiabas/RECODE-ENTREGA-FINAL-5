@@ -56,9 +56,10 @@ footer {
 }
 
 /** Estilo page destinos **/
-.bgDestino {
-    background: var(--bg-pages-url) center/cover;
-    height: 100vh;
-}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 
   

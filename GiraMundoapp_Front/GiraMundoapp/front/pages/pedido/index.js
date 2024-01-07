@@ -48,11 +48,11 @@ export default function pedido() {
                       </thead>
                       <tbody>
                         {pedidos.map((pedido) => (
-                          <tr key={pedido.PedidoId}>
-                            <td>{pedido.PedidoId}</td>
-                            <td>{pedido.DataPedido}</td>
-                            <td>{pedido.usuario.UsuarioId}</td>
-                            <td>{pedido.pacote.PacoteId}</td>
+                          <tr key={pedido.pedidoId}>
+                            <td>{pedido.pedidoId}</td>
+                            <td>{pedido.dataPedido}</td>
+                            <td>{pedido.usuarioId}</td>
+                            <td>{pedido.pacoteId}</td>
                           </tr>
                         ))}
                       </tbody>

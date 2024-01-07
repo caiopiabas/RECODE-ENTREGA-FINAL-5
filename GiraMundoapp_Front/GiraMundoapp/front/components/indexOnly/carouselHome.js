@@ -21,7 +21,7 @@ export default function CarouselHome() {
                   Embarque em aventuras feitas sob medida para cada viajante. Nossos pacotes são criados para celebrar a diversidade, proporcionando experiências únicas e acessíveis a todos.
                   </p>
                   <p>
-                    <a className={`btn btn-lg ${styles.btnGroup}`} href="./cliente">
+                    <a className={`btn btn-lg ${styles.btnGroup}`} href="./usuario">
                       Cadastre-se
                     </a>
                   </p>

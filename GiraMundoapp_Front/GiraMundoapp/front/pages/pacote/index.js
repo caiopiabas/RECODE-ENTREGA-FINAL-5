@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -45,11 +44,12 @@ export default function Pacote() {
                       </thead>
                       <tbody>
                         {pacotes.map((pacote) => (
-                          <tr key={pacote.PacoteId}>
-                            <td>{pacote.NomePacote}</td>
-                            <td>{pacote.Descricao}</td>
-                            <td>{pacote.Preco}</td>
-                            <td>{pacote.Duracao}</td>
+                          <tr key={pacote.pacoteId}>
+                            <td>{pacote.pacoteId}</td>
+                            <td>{pacote.nomePacote}</td>
+                            <td>{pacote.descricao}</td>
+                            <td>{pacote.preco}</td>
+                            <td>{pacote.duracao}</td>
                           </tr>
                         ))}
                       </tbody>

@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -10,7 +9,7 @@ export default function usuario() {
     axios
       .get("https://localhost:7058/api/Usuarios")
       .then((response) => {
-        setClientes(response.data);
+        setUsuarios(response.data);
       })
       .catch((error) => {
         console.error("Erro ao buscar a lista de Usuarios:", error);
@@ -48,10 +47,10 @@ export default function usuario() {
                       </thead>
                       <tbody>
                         {usuarios.map((usuario) => (
-                          <tr key={usuario.UsuarioId}>
-                            <td>{usuario.UsuarioId}</td>
-                            <td>{usuario.Nome}</td>
-                            <td>{usuario.Email}</td>
+                          <tr key={usuario.usuarioId}>
+                            <td>{usuario.usuarioId}</td>
+                            <td>{usuario.nome}</td>
+                            <td>{usuario.email}</td>
                           </tr>
                         ))}
                       </tbody>

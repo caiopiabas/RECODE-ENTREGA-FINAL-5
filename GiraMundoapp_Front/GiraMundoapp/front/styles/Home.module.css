@@ -3,6 +3,15 @@
 	color: white
 }
 
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6rem;
+	min-height: 100vh;
+}
+
 /** Estilo Botões **/
 .btnGroup {
 	background-color: var(--button-color) !important;

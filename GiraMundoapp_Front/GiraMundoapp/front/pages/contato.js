@@ -5,7 +5,7 @@ export default function Contato() {
   return (
     <>
       <Head>
-        <title>Contato | GiraMundo</title>
+        <title>Contato - GiraMundo</title>
       </Head>
 
       <main className="Contact">

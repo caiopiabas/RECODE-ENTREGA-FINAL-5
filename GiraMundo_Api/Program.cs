@@ -3,22 +3,33 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Adicionar serviços ao contêiner.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// CONEXÃO COM BANCO DE DADOS
 string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ApiDbContext>(options =>
-                    options.UseMySql(mySqlConnection,
-                    ServerVersion.AutoDetect(mySqlConnection)));
+    options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
+
+// CORS
+var MyAllowSpecificOrigins = "MyAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins, policy =>
+    {
+        policy.WithOrigins("*")
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configurar o pipeline de solicitação HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -26,6 +37,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BPUIZuC8KSuMWg9eyii75d6szS+909wnnF1DNnp7M0MStOJQ/EQpMxu7OhZhbKDzVoVhvmGNeBYKhODV52u1yQ==",
+  "dgSpecHash": "oaQnUnyK/0jxYHGhYS3svJzAEjyCruX5p0A9nNaXmGsVJkdZHrfVOyrSAat0QrjzYpxvDKUSfIMjnH7egawGeg==",
   "success": true,
-  "projectFilePath": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo\\GiraMundo.csproj",
+  "projectFilePath": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo_Api\\GiraMundo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pc-CaioBarbara\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Pc-CaioBarbara\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

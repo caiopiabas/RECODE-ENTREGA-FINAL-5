@@ -11561,11 +11561,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo\\GiraMundo.csproj",
+      "projectUniqueName": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo_Api\\GiraMundo.csproj",
       "projectName": "GiraMundo",
-      "projectPath": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo\\GiraMundo.csproj",
+      "projectPath": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo_Api\\GiraMundo.csproj",
       "packagesPath": "C:\\Users\\Pc-CaioBarbara\\.nuget\\packages\\",
-      "outputPath": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo\\obj\\",
+      "outputPath": "D:\\RECODE ENTREGA FINAL 5\\GiraMundo_Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pc-CaioBarbara\\AppData\\Roaming\\NuGet\\NuGet.Config",

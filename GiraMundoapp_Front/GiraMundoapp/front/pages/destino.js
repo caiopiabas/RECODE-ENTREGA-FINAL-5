@@ -9,7 +9,7 @@ export default function Promocoes() {
 
   useEffect(() => {
     axios
-      .get("http://destinofacilapi.somee.com/api/Destinos")
+      .get("https://localhost:7058/api/Pacotes")
       .then((response) => {
         setDestinos(response.data);
       })
@@ -17,11 +17,7 @@ export default function Promocoes() {
         console.error("Erro ao listar destinos:", error);
       });
   }, []);
-
-  const formatMoney = (price) => {
-    return price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-  };
-
+  
   return (
     <>
       <Head>
@@ -52,8 +48,6 @@ export default function Promocoes() {
                       <i className="bi bi-check-circle iconsStyle me-2 mt-1"></i>
                       <span className="card-text">Café da Manhã</span>
                     </div>
-
-                    
 
                     <div className="card-text">
                       <span className="d-flex fs-4 fw-semibold">10.000</span>
