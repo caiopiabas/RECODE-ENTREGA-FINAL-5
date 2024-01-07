@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GiraMundo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4023e5fdf2defa588b07a04d72e9ef254d873857")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97c1ee671fa0c6ebc04b684bee6bd332192c37bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("GiraMundo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GiraMundo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

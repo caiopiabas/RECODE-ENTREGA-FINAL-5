@@ -12,7 +12,8 @@ namespace GiraMundo.Models
         public int PedidoId { get; set; }
 
         [Required(ErrorMessage = "A Data do Pedido é obrigatória")]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? DataPedido { get; set; }
 
         // Chave estrangeira para Usuario

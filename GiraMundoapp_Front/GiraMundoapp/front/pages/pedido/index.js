@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Head from "next/head";
-import { useEffect, useState } from "react";
 
-export default function pedido() {
-  const [pedidos, setpedidos] = useState([]);
+export default function Pedido() {
+  const [pedidos, setPedidos] = useState([]);
 
   useEffect(() => {
     axios
       .get("https://localhost:7058/api/Pedidos")
       .then((response) => {
-        setpedidos(response.data);
+        setPedidos(response.data);
       })
       .catch((error) => {
         console.error("Erro ao buscar a lista de pedidos:", error);
@@ -19,6 +18,12 @@ export default function pedido() {
 
   const formatMoney = (price) => {
     return price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  };
+
+  const formatData = (data) => {
+    const dataArray = data.split(" ");
+    const dataFormatada = dataArray[0];
+    return dataFormatada;
   };
 
   return (
@@ -50,7 +55,7 @@ export default function pedido() {
                         {pedidos.map((pedido) => (
                           <tr key={pedido.pedidoId}>
                             <td>{pedido.pedidoId}</td>
-                            <td>{pedido.dataPedido}</td>
+                            <td>{formatData(pedido.dataPedido)}</td>
                             <td>{pedido.usuarioId}</td>
                             <td>{pedido.pacoteId}</td>
                           </tr>
